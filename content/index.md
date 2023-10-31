@@ -1,5 +1,6 @@
 ---
-title: Welcome to Quartz
+title: rl52
 ---
 
-[[алгоритмы/index|index]]
+алгоритмы		[[m0]]
+
