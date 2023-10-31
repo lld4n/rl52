@@ -484,7 +484,7 @@ export async function handleSync(argv) {
       timeStyle: "short",
     })
     spawnSync("git", ["add", "."], { stdio: "inherit" })
-    spawnSync("git", ["commit", "-m", `Quartz sync: ${currentTimestamp}`], { stdio: "inherit" })
+    spawnSync("git", ["commit", "-m", `${currentTimestamp}`], { stdio: "inherit" })
 
     if (contentStat.isSymbolicLink()) {
       // put symlink back
