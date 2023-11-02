@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     },
     baseUrl: "rl52.lldan.ru",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       typography: {
         header: "Schibsted Grotesk",
