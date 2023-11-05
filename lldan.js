@@ -26,7 +26,7 @@ let reslt = "---\ntitle: rl52\n---\n\n> я думал уже скип\n"
 for (let key in filesObj) {
   if (!throws.includes(key)) {
     console.log("верхний", key)
-    reslt += `# [[${key}]]\n`
+    reslt += `# ${key}\n`
     reslt += buffer(filesObj[key])
   }
 }
@@ -36,9 +36,9 @@ function buffer(obj, level = 2) {
   for (let key in obj) {
     if (key !== "index.md") {
       if (typeof obj[key] === "object") {
-        answer += getHash(level) + ` [[${key}]]\n` + buffer(obj[key], level + 1)
+        answer += getHash(level) + ` ${key}\n` + buffer(obj[key], level + 1)
       } else {
-        answer += `- [[${obj[key].replace(".md", "")}|${obj[key]}]]\n`
+        answer += `- [[${obj[key].replace(".md", "")}]]\n`
       }
     }
   }
