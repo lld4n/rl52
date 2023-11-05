@@ -15,6 +15,7 @@ title: rl52
 ## Стандартные объекты
 - [[Infinity]]
 - [[NaN]]
+- [[Number]]
 - [[Object]]
 - [[eval()]]
 - [[globalThis]]
