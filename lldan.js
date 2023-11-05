@@ -6,7 +6,7 @@ let result = "---\ntitle: rl52\n---\n\n# Дорогая грусть, прост
 for (let el of dirs) {
   if (!throws.includes(el)) {
     const dir = fs.readdirSync("./content/" + el).filter(el => el !== "index.md")
-    result += `- [[${el}]]\tКоличество - ${dir.length}\n`
+    result += `- [[${el}]]\n`
   }
 }
 fs.writeFileSync("./content/index.md", result)
