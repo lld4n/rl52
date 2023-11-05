@@ -22,7 +22,7 @@ function readDirRecursive(path) {
 
 const folderPath = "./content"
 const filesObj = readDirRecursive(folderPath)
-let reslt = "---\ntitle: rl52\n---\n\n# Дорогая грусть, прости, не вернусь\n\n> я думал уже скип\n"
+let reslt = "---\ntitle: rl52\n---\n\n> я думал уже скип\n"
 for (let key in filesObj) {
   if (!throws.includes(key)) {
     console.log("верхний", key)
@@ -38,7 +38,7 @@ function buffer(obj, level = 2) {
       if (typeof obj[key] === "object") {
         answer += getHash(level) + ` [[${key}]]\n` + buffer(obj[key], level + 1)
       } else {
-        answer += `###### [[${obj[key].replace(".md", "")}|${obj[key]}]]\n`
+        answer += `- [[${obj[key].replace(".md", "")}|${obj[key]}]]\n`
       }
     }
   }
