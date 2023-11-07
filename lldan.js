@@ -25,7 +25,6 @@ const filesObj = readDirRecursive(folderPath)
 let reslt = "---\ntitle: rl52\n---\n\n> я думал уже скип\n"
 for (let key in filesObj) {
   if (!throws.includes(key)) {
-    console.log("верхний", key)
     reslt += `# ${key}\n`
     reslt += buffer(filesObj[key])
   }

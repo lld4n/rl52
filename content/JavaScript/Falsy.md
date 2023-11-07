@@ -3,6 +3,7 @@ title: Falsy
 date: 2023-11-05
 ---
 ## Список
+Эти значения будут приведены к `false`
 - [[null]]
 - [[undefined]]
 - `false`
