@@ -1,6 +1,6 @@
 import fs from "fs"
 
-const throws = [".obsidian", "images", "index.md", "templates"]
+const throws = [".obsidian", "images", "index.md", "templates", "files"]
 
 function readDirRecursive(path) {
   const files = fs.readdirSync(path)
