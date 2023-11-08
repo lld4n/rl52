@@ -22,6 +22,7 @@ function readDirRecursive(path) {
 
 const folderPath = "./content"
 const filesObj = readDirRecursive(folderPath)
+console.log(filesObj)
 let reslt = "---\ntitle: rl52\n---\n\n> я думал уже скип\n"
 for (let key in filesObj) {
   if (!throws.includes(key)) {
