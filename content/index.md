@@ -26,8 +26,19 @@ title: rl52
 # SQL
 - [[CREATE TABLE]]
 - [[INSERT INTO]]
-- [[SELECT]]
 - [[Базовая информация]]
+## Выборка
+- [[ANY and ALL]]
+- [[AS]]
+- [[GROUP BY]]
+- [[HAVING]]
+- [[IF]]
+- [[LIKE]]
+- [[ORDER BY]]
+- [[SELECT]]
+- [[SUM, MAX, MIN, AVG]]
+- [[WHERE]]
+- [[Вложенный запрос]]
 - [[Математические функции и операторы PostgreSQL]]
 - [[Типы данных PostgreSQL]]
 # Алгоритмы

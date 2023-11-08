@@ -1,21 +1,7 @@
 ---
-title: SELECT
+title: AS
 date: 2023-11-08
 ---
-## Выборка всех данных 
-
-### Синтаксис
-```sql
-SELECT * FROM name_table;
-```
-
-## Выборка отдельных столбцов
-
-### Синтаксис
-```sql
-SELECT name_column1, name_column2 FROM name_table
-```
-
 ## Присвоение новых имен столбцам при формировании выборки
 
 ### Синтаксис
@@ -38,5 +24,5 @@ SELECT name_column1 oper(*) name_column2 AS title FROM name_table
 ### Пример
 ```sql
 SELECT title, amount, amount * 1.65 AS pack FROM book;
+SELECT title, author, amount, ROUND(price * 0.7, 2) AS new_price FROM book;
 ```
-
