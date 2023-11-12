@@ -56,7 +56,12 @@ title: rl52
 - [[CROSS JOIN]]
 - [[INNER JOIN]]
 - [[LEFT-RIGHT JOIN]]
+- [[USING()]]
 - [[Типы данных PostgreSQL]]
+# TypeScript
+- [[tsc]]
+- [[Повседневные типы]]
+- [[Старт TypeScript]]
 # Алгоритмы
 - [[Z-функция]]
 - [[Алгоритм Манакера]]

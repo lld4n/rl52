@@ -31,4 +31,7 @@ ORDER BY name_city ASC, 3 DESC
 
 ## Пример PostgreSQL
 ```postgresql
+SELECT name_city, name_author, '2020-01-01'::date + floor(random() * 365) * '1 day'::interval AS "Дата"
+FROM city CROSS JOIN author
+ORDER BY name_city ASC, "Дата" DESC
 ```

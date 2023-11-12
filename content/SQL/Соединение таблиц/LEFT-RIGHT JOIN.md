@@ -22,5 +22,12 @@ ON condition
 SELECT DISTINCT name_genre
 FROM genre LEFT JOIN book
 ON genre.genre_id = book.genre_id
-WHERE book_id IS NULL
+WHERE book_id IS NULL;
+
+SELECT name_author, SUM(amount) as Количество
+FROM author LEFT JOIN book
+ON book.author_id = author.author_id
+GROUP BY name_author
+HAVING SUM(amount) IS NULL OR SUM(amount) < 10
+ORDER BY SUM(amount) ASC
 ```
