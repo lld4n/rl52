@@ -23,6 +23,9 @@ title: rl52
 - [[isNaN()]]
 - [[undefined]]
 - [[Типы данных]]
+# NEXT.js
+- [[create-next-app]]
+- [[Структура проекта]]
 # SQL
 - [[AS]]
 - [[CREATE TABLE]]
