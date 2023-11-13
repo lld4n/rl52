@@ -60,6 +60,7 @@ title: rl52
 - [[Типы данных PostgreSQL]]
 # TypeScript
 - [[tsc]]
+- [[tsconfig]]
 - [[Повседневные типы]]
 - [[Старт TypeScript]]
 # Алгоритмы
