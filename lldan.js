@@ -1,48 +1,88 @@
 import fs from "fs"
+import { type } from "os"
 
 const throws = [".obsidian", "images", "index.md", "templates", "files"]
 
-function readDirRecursive(path) {
+function red(path) {
   const files = fs.readdirSync(path)
-  const resultObj = {}
-
+  let result = []
   for (const file of files) {
     const filePath = `${path}/${file}`
     const stats = fs.statSync(filePath)
-
     if (stats.isDirectory()) {
-      resultObj[file] = readDirRecursive(filePath)
+      result.push({
+        title: file,
+        items: red(filePath),
+      })
     } else {
-      resultObj[file] = file
+      result.push(file)
     }
   }
-
-  return resultObj
+  return result
 }
 
 const folderPath = "./content"
-const filesObj = readDirRecursive(folderPath)
-console.log(filesObj)
-let reslt = "---\ntitle: rl52\n---\n\n> я думал уже скип\n"
-for (let key in filesObj) {
-  if (!throws.includes(key)) {
-    reslt += `# ${key}\n`
-    reslt += buffer(filesObj[key])
+const filesObj = sortItems(red(folderPath))
+
+function sortItems(array) {
+  const isString = (item) => typeof item === "string"
+
+  const sortObjectItems = (obj) => {
+    obj.items.sort((a, b) => {
+      if (isString(a) && isString(b)) {
+        return a.localeCompare(b) // Сортировка строк
+      }
+      if (isString(a)) {
+        return -1 // Строки идут первыми
+      }
+      if (isString(b)) {
+        return 1 // Строки идут первыми
+      }
+      return 0 // Если оба элемента объекты
+    })
   }
+
+  // Сортировка верхнего уровня
+  array.sort((a, b) => {
+    if (isString(a) && isString(b)) {
+      return a.localeCompare(b) // Сортировка строк
+    }
+    if (isString(a)) {
+      return -1 // Строки идут первыми
+    }
+    if (isString(b)) {
+      return 1 // Строки идут первыми
+    }
+    return 0 // Если оба элемента объекты
+  })
+
+  // Сортировка items в каждом объекте
+  array.forEach((obj) => {
+    if (obj.items && Array.isArray(obj.items)) {
+      sortObjectItems(obj)
+    }
+  })
+
+  return array
 }
 
-function buffer(obj, level = 2) {
-  let answer = ""
-  for (let key in obj) {
-    if (key !== "index.md") {
-      if (typeof obj[key] === "object") {
-        answer += getHash(level) + ` ${key}\n` + buffer(obj[key], level + 1)
-      } else {
-        answer += `- [[${obj[key].replace(".md", "")}]]\n`
+fs.writeFileSync("./lldan.json", JSON.stringify(filesObj, null, 2))
+
+let reslt = "---\ntitle: rl52\n---\n\n> я только начал\n"
+fillMd(filesObj)
+function fillMd(array, level = 1) {
+  for (let el of array) {
+    if (typeof el === "string") {
+      if (el !== "index.md") {
+        reslt += "- [[" + el.replace(".md", "").trim() + "]]\n"
+      }
+    } else {
+      if (!throws.includes(el.title)) {
+        reslt += getHash(level) + " " + el.title + "\n"
+        fillMd(el.items, level + 1)
       }
     }
   }
-  return answer
 }
 
 function getHash(level) {

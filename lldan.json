@@ -1,0 +1,183 @@
+[
+  "index.md",
+  {
+    "title": ".obsidian",
+    "items": [
+      ".DS_Store",
+      "app.json",
+      "appearance.json",
+      "core-plugins-migration.json",
+      "core-plugins.json",
+      "graph.json",
+      "hotkeys.json",
+      "templates.json",
+      "types.json",
+      "workspace.json",
+      {
+        "title": "themes",
+        "items": []
+      }
+    ]
+  },
+  {
+    "title": "JavaScript",
+    "items": [
+      "Falsy.md",
+      "Выражения.md",
+      "Деструктуризация.md",
+      "Область видимости.md",
+      "Объекты.md",
+      "Операторы.md",
+      "Переменные.md",
+      "Приоритет операторов.md",
+      "Типы данных.md",
+      {
+        "title": "Стандартные объекты",
+        "items": [
+          "Infinity.md",
+          "NaN.md",
+          "Number.md",
+          "Object.md",
+          "eval().md",
+          "globalThis.md",
+          "isFinite().md",
+          "isNaN().md",
+          "undefined.md"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "NEXT.js",
+    "items": [
+      "create-next-app.md",
+      "Стилизация NEXT.js.md",
+      "Структура проекта.md"
+    ]
+  },
+  {
+    "title": "SQL",
+    "items": [
+      "AS.md",
+      "CREATE TABLE.md",
+      "DATEDIFF().md",
+      "DELETE.md",
+      "INSERT INTO.md",
+      "MONTH().md",
+      "MONTHNAME().md",
+      "ON DELETE.md",
+      "UPDATE.md",
+      "Алиас.md",
+      "Базовая информация.md",
+      "Математические функции и операторы PostgreSQL.md",
+      "Типы данных PostgreSQL.md",
+      {
+        "title": "Выборка",
+        "items": [
+          "ANY and ALL.md",
+          "GROUP BY.md",
+          "HAVING.md",
+          "IF.md",
+          "LIKE.md",
+          "LIMIT.md",
+          "ORDER BY.md",
+          "SELECT.md",
+          "SUM, MAX, MIN, AVG.md",
+          "WHERE.md",
+          "Вложенный запрос.md"
+        ]
+      },
+      {
+        "title": "Связи",
+        "items": [
+          "Многие ко многим.md",
+          "Один ко многим.md",
+          "Один ко одному.md"
+        ]
+      },
+      {
+        "title": "Соединение таблиц",
+        "items": [
+          "CROSS JOIN.md",
+          "INNER JOIN.md",
+          "LEFT-RIGHT JOIN.md",
+          "USING().md"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "TypeScript",
+    "items": [
+      "tsc.md",
+      "tsconfig.md",
+      "Повседневные типы.md",
+      "Старт TypeScript.md"
+    ]
+  },
+  {
+    "title": "files",
+    "items": [
+      "Pasted image 20231101020026.png",
+      "Pasted image 20231101020034.png",
+      "Pasted image 20231108010523.png",
+      "Pasted image 20231108084015.png",
+      "Pasted image 20231108084524.png",
+      "Pasted image 20231108085039.png",
+      "Pasted image 20231108100246.png",
+      "Pasted image 20231108101726.png",
+      "Pasted image 20231126142922.png",
+      "Pasted image 20231126144207.png"
+    ]
+  },
+  {
+    "title": "templates",
+    "items": [
+      "Грокаем алгоритмы.PDF",
+      "книга.md",
+      "Программист-прагматик.pdf",
+      "шаблон.md"
+    ]
+  },
+  {
+    "title": "Алгоритмы",
+    "items": [
+      "index.md",
+      "Z-функция.md",
+      "Алгоритм Манакера.md",
+      "Алгоритм Рабина-Карпа.md",
+      "Бинарный поиск.md",
+      "Быстрая сортировка.md",
+      "Жадные алгоритмы.md",
+      "Задача поиска подстроки в строке.md",
+      "Наименьший подпериод строки.md",
+      "Поиск в ширину.md",
+      "Поиск подстроки палиндрома максимальной длины.md",
+      "Полинимальный хеш.md",
+      "Префикс-функция.md",
+      "Сортировка выбором.md",
+      "Хеш-таблицы.md"
+    ]
+  },
+  {
+    "title": "Вопросы",
+    "items": []
+  },
+  {
+    "title": "Другое",
+    "items": [
+      "Event Loop.md",
+      "Архитектора браузера.md",
+      "Ошибка на миллиард долларов.md",
+      "Рендер.md",
+      "Семантический номер версии.md"
+    ]
+  },
+  {
+    "title": "Книги",
+    "items": [
+      "Грокаем алгоритмы.md",
+      "Программист-прагматик.md"
+    ]
+  }
+]
