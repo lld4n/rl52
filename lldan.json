@@ -22,11 +22,11 @@
   {
     "title": "HTML",
     "items": [
-      "<!DOCTYPE>.md",
-      "<base>.md",
-      "<head>.md",
-      "<html>.md",
-      "<meta>.md",
+      "!DOCTYPE.md",
+      "base.md",
+      "head.md",
+      "html.md",
+      "meta.md",
       "Схлопывание и выпадение отступов.md"
     ]
   },

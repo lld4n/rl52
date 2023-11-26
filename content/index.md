@@ -4,11 +4,11 @@ title: rl52
 
 > я только начал
 # HTML
-- [[<!DOCTYPE>]]
-- [[<base>]]
-- [[<head>]]
-- [[<html>]]
-- [[<meta>]]
+- [[!DOCTYPE]]
+- [[base]]
+- [[head]]
+- [[html]]
+- [[meta]]
 - [[Схлопывание и выпадение отступов]]
 # JavaScript
 - [[Falsy]]
