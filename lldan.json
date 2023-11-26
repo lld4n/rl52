@@ -20,6 +20,17 @@
     ]
   },
   {
+    "title": "HTML",
+    "items": [
+      "<!DOCTYPE>.md",
+      "<base>.md",
+      "<head>.md",
+      "<html>.md",
+      "<meta>.md",
+      "Схлопывание и выпадение отступов.md"
+    ]
+  },
+  {
     "title": "JavaScript",
     "items": [
       "Falsy.md",
@@ -107,6 +118,10 @@
     ]
   },
   {
+    "title": "Tailwind CSS",
+    "items": []
+  },
+  {
     "title": "TypeScript",
     "items": [
       "tsc.md",
@@ -127,7 +142,8 @@
       "Pasted image 20231108100246.png",
       "Pasted image 20231108101726.png",
       "Pasted image 20231126142922.png",
-      "Pasted image 20231126144207.png"
+      "Pasted image 20231126144207.png",
+      "Pasted image 20231126205703.png"
     ]
   },
   {
@@ -161,7 +177,9 @@
   },
   {
     "title": "Вопросы",
-    "items": []
+    "items": [
+      "Почему принято размещать <link> со стилями внутри <head>, а <script> перед закрывающим тегом <body>?.md"
+    ]
   },
   {
     "title": "Другое",
