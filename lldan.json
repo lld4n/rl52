@@ -38,6 +38,15 @@
           "title.md",
           "Схлопывание и выпадение отступов.md"
         ]
+      },
+      {
+        "title": "Форматирование",
+        "items": [
+          "address.md",
+          "blockquote.md",
+          "br.md",
+          "q.md"
+        ]
       }
     ]
   },
