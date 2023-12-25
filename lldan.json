@@ -138,10 +138,6 @@
     ]
   },
   {
-    "title": "Tailwind CSS",
-    "items": []
-  },
-  {
     "title": "TypeScript",
     "items": [
       "tsc.md",

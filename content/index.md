@@ -81,7 +81,6 @@ title: rl52
 - [[INNER JOIN]]
 - [[LEFT-RIGHT JOIN]]
 - [[USING()]]
-# Tailwind CSS
 # TypeScript
 - [[tsc]]
 - [[tsconfig]]
